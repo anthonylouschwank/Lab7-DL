@@ -1,0 +1,51 @@
+\usepackage[spanish,es-noshorthands,es-tabla]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[letterpaper,margin=1.6cm,top=1.4cm,bottom=1.45cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage[font=footnotesize,labelfont=bf,skip=3pt]{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage[table]{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{siunitx}
+\usepackage[hidelinks]{hyperref}
+
+\graphicspath{{../figures/}}
+
+\definecolor{acento}{HTML}{1F5F99}
+\definecolor{gris}{HTML}{5F6B73}
+\definecolor{fondo}{HTML}{F3F5F7}
+\hypersetup{colorlinks=true, linkcolor=acento, urlcolor=acento, citecolor=acento}
+
+\titleformat{\section}{\normalsize\bfseries\color{acento}}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\small\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{0.7em}{0.25em}
+\titlespacing*{\subsection}{0pt}{0.5em}{0.15em}
+
+\setlist{itemsep=1pt, topsep=2pt, parsep=0pt, leftmargin=12pt}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{3.5pt}
+\setlength{\textfloatsep}{6pt}
+\setlength{\floatsep}{5pt}
+\setlength{\intextsep}{5pt}
+\sisetup{group-separator={,}, group-minimum-digits=4}
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\repo}{\url{https://github.com/anthonylouschwank/Lab7-DL}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.3pt}
+\fancyhead[L]{\footnotesize\color{gris}CC3092 · Laboratorio 7: NLP end-to-end y Embeddings}
+\fancyhead[R]{\footnotesize\color{gris}Anthony Lou Schwank}
+\fancyfoot[C]{\footnotesize\thepage}
+\setlength{\emergencystretch}{2em}

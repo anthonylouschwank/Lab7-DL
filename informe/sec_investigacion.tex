@@ -1,0 +1,21 @@
+\section{Investigación: embeddings en PyTorch y gensim}
+\begin{itemize}
+  \item \code{nn.Embedding(num\_embeddings, embedding\_dim, padding\_idx, sparse)}: tabla entrenable $V\times d$; recibe IDs y
+  devuelve sus filas. \code{padding\_idx} fija una fila en cero sin gradiente (para \code{<pad>}); \code{sparse=True}
+  produce gradientes sólo de las filas usadas (clave con $V\approx10^5$; requiere \code{SGD}/\code{SparseAdam}/\code{Adagrad}).
+  \code{nn.Embedding.from\_pretrained(M, freeze)} crea la tabla desde una matriz (GloVe, SGNS); \code{freeze=True} la congela
+  (\code{requires\_grad=False}) y \code{freeze=False} permite \emph{fine-tuning}.
+  \item \code{nn.EmbeddingBag(..., mode)} agrega bolsas de vectores sin materializar el tensor $(B,L,d)$: recibe todos los IDs
+  concatenados y \code{offsets} (inicio de cada documento), así que no necesita padding. \code{mean} promedia (invariante a la
+  longitud), \code{sum} suma (admite \code{per\_sample\_weights}) y \code{max} toma el máximo por dimensión.
+  \item \textbf{gensim}: \code{Word2Vec} (\code{vector\_size}, \code{window}, \code{min\_count}, \code{sg}, \code{negative},
+  \code{sample}, \code{alpha}, \code{epochs}); \code{KeyedVectors} ofrece \code{most\_similar} (3CosAdd), \code{most\_similar\_cosmul},
+  \code{evaluate\_word\_analogies}, \code{evaluate\_word\_pairs} y \code{save\_word2vec\_format}.
+  \item \textbf{CBOW vs.\ skip-gram}: CBOW predice la palabra central desde el promedio del contexto (rápido, favorece palabras
+  frecuentes); skip-gram predice cada contexto desde la central (más pares por token, mejor con palabras raras y analogías).
+  \item \textbf{Dos matrices}: $W$ (palabra como centro) y $W'$ (palabra como contexto/negativo). Con una sola matriz el modelo
+  debería dar baja probabilidad a $\sigma(v_w^\top v_w)$, que es siempre grande, y la optimización se degrada. Se conserva $W$.
+  \item \textbf{Word2Vec vs.\ GloVe}: Word2Vec es \emph{predictivo} (SGD local sobre ventanas, contexto real vs.\ negativos);
+  GloVe es \emph{de conteo}: construye la matriz global $X_{ij}$ y ajusta $w_i^\top\tilde w_j+b_i+\tilde b_j\approx\log X_{ij}$
+  por mínimos cuadrados ponderados. SGNS factoriza implícitamente una PMI desplazada (Levy \& Goldberg, 2014).
+\end{itemize}

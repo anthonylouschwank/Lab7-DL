@@ -1,0 +1,20 @@
+\section{Exploración y preprocesamiento}
+\textbf{Corpus.} El split \code{train} de WikiText-103 tiene \num{1801350} líneas (\num{1165029} no vacías, de las cuales
+\num{275630} son encabezados de sección), \num{29444} líneas de título de artículo (el dataset reporta \num{28475}
+artículos; el resto son líneas con el mismo formato \code{" = X = "}) y \num{101425671} tokens separados por espacios
+(\num{84593278} tras nuestra normalización, que elimina la puntuación; \num{717430} tipos).
+
+\textbf{Normalización (alineada con GloVe 6B, \emph{uncased} y tokenizado estilo PTB).}
+(i)~minúsculas; (ii)~se reconstruyen los artefactos de WikiText (\code{well @-@ known}$\to$\code{well-known},
+\code{1 @,@ 000}$\to$\code{1,000}, \code{1 @.@ 5}$\to$\code{1.5}); (iii)~contracciones PTB (\code{didn 't}$\to$\code{did n't},
+\code{can't}$\to$\code{ca n't}, \code{'s} separado); (iv)~compuestos con guion y siglas/abreviaturas con punto
+(\code{u.s.}, \code{dr.}, \code{jan.}) como un solo token; (v)~números como dígitos (sin \code{<num>}); (vi)~puntuación
+eliminada (no aparece en los benchmarks y ocuparía posiciones de la ventana). En los embeddings las palabras bajo
+\code{min\_count} se \emph{eliminan} antes de formar ventanas (como Word2Vec); en clasificación no se necesita \code{<pad>}
+porque \code{EmbeddingBag} usa \code{offsets}. Lo que \emph{debe} coincidir con GloVe es el casing, el formato de contracciones,
+guiones y números: si no, una misma palabra tendría formas distintas y los benchmarks se evaluarían sobre preguntas diferentes.
+
+\textbf{Tokenizador propio vs.\ librerías} (12 oraciones, sin puntuación). Coincide con NLTK salvo en siglas finales
+(\code{u.s.} vs.\ \code{u.s}, \code{e.g.}), \code{i'd've} (NLTK deja \code{i'd}) y correos. spaCy difiere más: parte los
+compuestos con guion (\code{state | of | the | art}, \code{york | based}, \code{10 | 15}), quita el punto de \code{dr.}/\code{jan.}
+y conserva \code{jsmith@example.com}. Las tres separan igual \code{ca n't}, \code{wo n't} e \code{is n't}.
