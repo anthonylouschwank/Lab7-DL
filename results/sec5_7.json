@@ -1,0 +1,309 @@
+{
+  "best_name": "sgns_best10",
+  "best_cfg": {
+    "dim": 100,
+    "window": 5,
+    "neg": 15,
+    "sample": 0.0001,
+    "min_count": 5,
+    "lr": 0.005,
+    "epochs": 10,
+    "batch": 8192,
+    "frac": 1.0
+  },
+  "best_lr": 0.005,
+  "glove_quick": {
+    "an_sem": 0.6554481839386871,
+    "an_syn": 0.6545352112676056,
+    "an_total": 0.6549035423808564,
+    "an_coverage": 0.7612054850593533,
+    "wordsim": 0.5327354323238275,
+    "wordsim_cov": 1.0
+  },
+  "sgns_quick": {
+    "an_sem": 0.47355021216407356,
+    "an_syn": 0.49630795303232056,
+    "an_total": 0.48948796202102407,
+    "an_coverage": 0.6035611952517397,
+    "wordsim": 0.6744484383226061,
+    "wordsim_cov": 1.0
+  },
+  "gensim_quick": {
+    "an_sem": 0.46136618141097424,
+    "an_syn": 0.5018927830015875,
+    "an_total": 0.4895842190289941,
+    "an_coverage": 0.6017703643061809,
+    "wordsim": 0.6691147710631061,
+    "wordsim_cov": 1.0
+  },
+  "oov": {
+    "SGNS": {
+      "train": 0.033820612404780556,
+      "test": 0.033381905350959036
+    },
+    "gensim": {
+      "train": 0.033820612404780556,
+      "test": 0.033381905350959036
+    },
+    "GloVe": {
+      "train": 0.008300723319681414,
+      "test": 0.00803709644166291
+    }
+  },
+  "test": {
+    "TF-IDF": {
+      "modelo": "TF-IDF + LogReg",
+      "acc": 0.9213157894736842,
+      "precision": 0.9211762601445825,
+      "recall": 0.9213157894736842,
+      "f1": 0.9211343388921702
+    },
+    "Aleatorio": {
+      "modelo": "Aleatorio",
+      "acc": 0.9055263157894737,
+      "precision": 0.9056765431367503,
+      "recall": 0.9055263157894736,
+      "f1": 0.9055392625644654
+    },
+    "SGNS": {
+      "modelo": "SGNS fine-tuning",
+      "acc": 0.9140789473684211,
+      "precision": 0.9139395272013591,
+      "recall": 0.9140789473684211,
+      "f1": 0.9138996774652475
+    },
+    "gensim": {
+      "modelo": "gensim fine-tuning",
+      "acc": 0.9135526315789474,
+      "precision": 0.9142933379953568,
+      "recall": 0.9135526315789474,
+      "f1": 0.9135760643491951
+    },
+    "GloVe": {
+      "modelo": "GloVe fine-tuning",
+      "acc": 0.9182894736842105,
+      "precision": 0.9186754496198715,
+      "recall": 0.9182894736842105,
+      "f1": 0.9182748285641836
+    }
+  },
+  "simlex": {
+    "SGNS": {
+      "spearman": 0.29462217760826137,
+      "n": 995,
+      "coverage": 0.995995995995996
+    },
+    "gensim": {
+      "spearman": 0.31221430521341853,
+      "n": 995,
+      "coverage": 0.995995995995996
+    },
+    "GloVe": {
+      "spearman": 0.2975498530061459,
+      "n": 999,
+      "coverage": 1.0
+    }
+  },
+  "simlex_shared": {
+    "SGNS": {
+      "spearman": 0.28944918770233663,
+      "n": 965,
+      "coverage": 0.965965965965966
+    },
+    "gensim": {
+      "spearman": 0.3062375011700481,
+      "n": 965,
+      "coverage": 0.965965965965966
+    },
+    "GloVe": {
+      "spearman": 0.3071585517947382,
+      "n": 965,
+      "coverage": 0.965965965965966
+    }
+  },
+  "wordsim": {
+    "SGNS": {
+      "spearman": 0.6744484383226061,
+      "n": 353,
+      "coverage": 1.0
+    },
+    "gensim": {
+      "spearman": 0.6691147710631061,
+      "n": 353,
+      "coverage": 1.0
+    },
+    "GloVe": {
+      "spearman": 0.5327354323238275,
+      "n": 353,
+      "coverage": 1.0
+    }
+  },
+  "par_avg": {
+    "SGNS": 0.23792209369795664,
+    "SGNS_base": 0.11622116129313197,
+    "gensim": 0.2411220408976078,
+    "gensim_base": 0.11783359252980777,
+    "GloVe": 0.40441715930189404,
+    "GloVe_base": 0.1747591229421752
+  },
+  "tsne_purity": {
+    "SGNS": 0.8438413361169103,
+    "gensim": 0.8450939457202505,
+    "GloVe": 0.8918580375782881
+  },
+  "tfidf_C": 4.0,
+  "best_by_init": {
+    "TF-IDF": "TF-IDF + LogReg",
+    "Aleatorio": "Aleatorio",
+    "SGNS": "SGNS fine-tuning",
+    "gensim": "gensim fine-tuning",
+    "GloVe": "GloVe fine-tuning"
+  },
+  "shared_last": "jumper",
+  "clf": {
+    "TF-IDF + LogReg": {
+      "val": {
+        "acc": 0.9248333333333333,
+        "precision": 0.9246470295885042,
+        "recall": 0.9248333333333334,
+        "f1": 0.9246483442856523
+      },
+      "params_total": 1698048,
+      "params_trainable": 1698048,
+      "time": 151.2180037498474,
+      "init": "TF-IDF",
+      "variant": "-"
+    },
+    "Aleatorio": {
+      "val": {
+        "acc": 0.9143333333333333,
+        "precision": 0.914450804257782,
+        "recall": 0.9143333333333334,
+        "f1": 0.9142462231365909
+      },
+      "time": 5.9967992305755615,
+      "epochs_run": 6,
+      "params_total": 4950084,
+      "params_trainable": 4950084,
+      "vocab": 49232,
+      "init": "Aleatorio",
+      "variant": "entrenado"
+    },
+    "SGNS congelado": {
+      "val": {
+        "acc": 0.8855833333333333,
+        "precision": 0.8856044392690684,
+        "recall": 0.8855833333333334,
+        "f1": 0.8853886837978795
+      },
+      "time": 4.076806306838989,
+      "epochs_run": 8,
+      "params_total": 4566384,
+      "params_trainable": 26884,
+      "vocab": 45395,
+      "init": "SGNS",
+      "variant": "congelado"
+    },
+    "SGNS fine-tuning": {
+      "val": {
+        "acc": 0.91875,
+        "precision": 0.9186754606242247,
+        "recall": 0.91875,
+        "f1": 0.918560948963242
+      },
+      "time": 3.757659673690796,
+      "epochs_run": 4,
+      "params_total": 4566384,
+      "params_trainable": 4566384,
+      "vocab": 45395,
+      "init": "SGNS",
+      "variant": "fine-tuning"
+    },
+    "gensim congelado": {
+      "val": {
+        "acc": 0.8868333333333334,
+        "precision": 0.8892848305453499,
+        "recall": 0.8868333333333334,
+        "f1": 0.8866560317757796
+      },
+      "time": 3.9158990383148193,
+      "epochs_run": 8,
+      "params_total": 4566384,
+      "params_trainable": 26884,
+      "vocab": 45395,
+      "init": "gensim",
+      "variant": "congelado"
+    },
+    "gensim fine-tuning": {
+      "val": {
+        "acc": 0.9185,
+        "precision": 0.9194547306374254,
+        "recall": 0.9185000000000001,
+        "f1": 0.9184852173352193
+      },
+      "time": 4.703473806381226,
+      "epochs_run": 5,
+      "params_total": 4566384,
+      "params_trainable": 4566384,
+      "vocab": 45395,
+      "init": "gensim",
+      "variant": "fine-tuning"
+    },
+    "GloVe congelado": {
+      "val": {
+        "acc": 0.9035833333333333,
+        "precision": 0.9040693437846791,
+        "recall": 0.9035833333333333,
+        "f1": 0.9035579728169825
+      },
+      "time": 4.0680177211761475,
+      "epochs_run": 8,
+      "params_total": 6628384,
+      "params_trainable": 26884,
+      "vocab": 66015,
+      "init": "GloVe",
+      "variant": "congelado"
+    },
+    "GloVe fine-tuning": {
+      "val": {
+        "acc": 0.9229166666666667,
+        "precision": 0.9235944987017489,
+        "recall": 0.9229166666666667,
+        "f1": 0.9228638572699792
+      },
+      "time": 5.629085540771484,
+      "epochs_run": 5,
+      "params_total": 6628384,
+      "params_trainable": 6628384,
+      "vocab": 66015,
+      "init": "GloVe",
+      "variant": "fine-tuning"
+    }
+  },
+  "gensim_runs": {
+    "gensim_best": {
+      "tokens": 30000534,
+      "an_total": 0.4895842190289941,
+      "wordsim": 0.6691147710631061,
+      "time": 1006.006019115448
+    },
+    "gensim_frac0.25": {
+      "tokens": 7502502,
+      "an_total": 0.257643062451006,
+      "wordsim": 0.6153249300504899,
+      "time": 221.9180691242218
+    },
+    "gensim_frac0.5": {
+      "tokens": 15000966,
+      "an_total": 0.4040027724831052,
+      "wordsim": 0.6426175639015004,
+      "time": 376.92109775543213
+    },
+    "gensim_fracfull": {
+      "tokens": 84593278,
+      "an_total": 0.5650780608052588,
+      "wordsim": 0.6872210852500644,
+      "time": 1717.8263721466064
+    }
+  }
+}

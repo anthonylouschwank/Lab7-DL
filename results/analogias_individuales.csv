@@ -1,0 +1,61 @@
+tipo,analogia,modelo,top5,rango,cos_correcta,acierto
+género,man:king::woman:queen,SGNS,"jagiellon (0.74), queen (0.73), guelders (0.68), throne (0.68), consort (0.68)",2,0.7303506135940552,False
+género,man:king::woman:queen,gensim,"jagiellon (0.72), obrenović (0.71), regnant (0.70), eanflæd (0.70), queen (0.69)",5,0.6919230818748474,False
+género,man:king::woman:queen,GloVe,"queen (0.77), monarch (0.68), throne (0.68), daughter (0.66), princess (0.65)",1,0.7698540687561035,True
+género,man:actor::woman:actress,SGNS,"actress (0.86), balan (0.68), actors (0.66), actresses (0.66), singer (0.64)",1,0.8557502627372742,True
+género,man:actor::woman:actress,gensim,"actress (0.83), taymor (0.67), actors (0.67), leandersson (0.66), moonstruck (0.65)",1,0.834807276725769,True
+género,man:actor::woman:actress,GloVe,"actress (0.91), comedian (0.69), actresses (0.68), screenwriter (0.66), starred (0.65)",1,0.9073567986488342,True
+género,boy:prince::girl:princess,SGNS,"princess (0.67), consort (0.66), queen (0.66), hrh (0.64), saxe-coburg-saalfeld (0.59)",1,0.6681016087532043,True
+género,boy:prince::girl:princess,gensim,"hrh (0.66), queen (0.65), princess (0.65), dodi (0.64), great-grandmother (0.63)",3,0.6461702585220337,False
+género,boy:prince::girl:princess,GloVe,"princess (0.80), queen (0.68), king (0.63), daughter (0.63), duchess (0.63)",1,0.7985005974769592,True
+género,father:son::mother:daughter,SGNS,"daughter (0.87), wife (0.80), eldest (0.79), grandson (0.75), daughters (0.75)",1,0.8706225752830505,True
+género,father:son::mother:daughter,gensim,"daughter (0.86), wife (0.84), grandchild (0.80), eldest (0.80), cousin (0.77)",1,0.8618548512458801,True
+género,father:son::mother:daughter,GloVe,"daughter (0.95), wife (0.89), sister (0.84), niece (0.82), husband (0.82)",1,0.9525263905525208,True
+país-capital,france:paris::japan:tokyo,SGNS,"tokyo (0.84), shanghai (0.66), nagoya (0.66), toshi (0.66), fukuoka (0.65)",1,0.8375841379165649,True
+país-capital,france:paris::japan:tokyo,gensim,"tokyo (0.84), osaka (0.70), sapporo (0.69), makuhari (0.69), yokohama (0.69)",1,0.844358503818512,True
+país-capital,france:paris::japan:tokyo,GloVe,"tokyo (0.90), osaka (0.74), japanese (0.71), seoul (0.69), shanghai (0.67)",1,0.8993860483169556,True
+país-capital,canada:ottawa::australia:canberra,SGNS,"geelong (0.65), tasmania (0.65), melbourne (0.64), anglo-welsh (0.64), queensland (0.64)",250,0.49348655343055725,False
+país-capital,canada:ottawa::australia:canberra,gensim,"tasmania (0.66), queensland (0.65), miller (0.61), geelong (0.61), brisbane (0.61)",120,0.5196203589439392,False
+país-capital,canada:ottawa::australia:canberra,GloVe,"brisbane (0.74), canberra (0.71), melbourne (0.67), queensland (0.66), perth (0.66)",2,0.7057167887687683,False
+país-capital,egypt:cairo::kenya:nairobi,SGNS,"nairobi (0.67), kampala (0.61), dhaka (0.60), tanganyika (0.59), harare (0.59)",1,0.6664978861808777,True
+país-capital,egypt:cairo::kenya:nairobi,gensim,"nairobi (0.70), ababa (0.61), dhaka (0.61), jeddah (0.61), addis (0.60)",1,0.6975229382514954,True
+país-capital,egypt:cairo::kenya:nairobi,GloVe,"nairobi (0.90), kampala (0.73), harare (0.72), abuja (0.71), johannesburg (0.70)",1,0.9049164652824402,True
+país-gentilicio,france:french::germany:german,SGNS,"german (0.88), austrian (0.78), dutch (0.75), germans (0.73), italian (0.72)",1,0.8845012187957764,True
+país-gentilicio,france:french::germany:german,gensim,"german (0.86), austrian (0.78), russian (0.75), dutch (0.75), polish (0.72)",1,0.8583464622497559,True
+país-gentilicio,france:french::germany:german,GloVe,"german (0.96), austrian (0.78), swiss (0.77), swedish (0.73), polish (0.73)",1,0.9596728086471558,True
+país-gentilicio,china:chinese::mexico:mexican,SGNS,"mexican (0.79), tlaxcala (0.68), spanish (0.67), texas (0.66), aztec (0.65)",1,0.7873610258102417,True
+país-gentilicio,china:chinese::mexico:mexican,gensim,"mexican (0.78), texas (0.70), tlaxcala (0.66), oaxaca (0.64), potosí (0.63)",1,0.782746434211731,True
+país-gentilicio,china:chinese::mexico:mexican,GloVe,"mexican (0.91), puerto (0.75), spanish (0.73), brazilian (0.71), cuban (0.70)",1,0.9106161594390869,True
+país-gentilicio,italy:italian::brazil:brazilian,SGNS,"brazilian (0.85), portuguese (0.74), argentine (0.70), chilean (0.67), gerais (0.64)",1,0.8524283766746521,True
+país-gentilicio,italy:italian::brazil:brazilian,gensim,"brazilian (0.83), chilean (0.74), portuguese (0.71), argentine (0.66), haitian (0.62)",1,0.8335596919059753,True
+país-gentilicio,italy:italian::brazil:brazilian,GloVe,"brazilian (0.93), argentine (0.76), mexican (0.75), chilean (0.73), portuguese (0.72)",1,0.9348973035812378,True
+comparativo/superlativo,good:better::bad:worse,SGNS,"worse (0.71), bigger (0.64), stupid (0.59), gettin (0.58), updated (0.57)",1,0.7093498110771179,True
+comparativo/superlativo,good:better::bad:worse,gensim,"worse (0.76), bigger (0.70), updated (0.59), prettier (0.59), harder (0.59)",1,0.7638466358184814,True
+comparativo/superlativo,good:better::bad:worse,GloVe,"worse (0.84), too (0.75), even (0.73), getting (0.73), because (0.73)",1,0.8442932367324829,True
+comparativo/superlativo,big:biggest::small:smallest,SGNS,"large (0.66), largest (0.61), relatively (0.59), outside (0.55), meliphagoidea (0.54)",11,0.5155202150344849,False
+comparativo/superlativo,big:biggest::small:smallest,gensim,"large (0.65), largest (0.63), sizeable (0.56), outside (0.56), evere (0.56)",6,0.5360077023506165,False
+comparativo/superlativo,big:biggest::small:smallest,GloVe,"largest (0.87), large (0.77), larger (0.70), smaller (0.69), main (0.67)",11,0.6361111402511597,False
+comparativo/superlativo,fast:faster::strong:stronger,SGNS,"stronger (0.69), weaker (0.63), marginally (0.60), compressive (0.58), strongest (0.57)",1,0.6898617148399353,True
+comparativo/superlativo,fast:faster::strong:stronger,gensim,"stronger (0.76), weaker (0.63), higher (0.61), lessening (0.59), marginally (0.59)",1,0.7553632259368896,True
+comparativo/superlativo,fast:faster::strong:stronger,GloVe,"stronger (0.81), robust (0.67), weaker (0.67), weak (0.66), growth (0.65)",1,0.8069435954093933,True
+tiempo verbal,walk:walked::swim:swam,SGNS,"swam (0.61), lacke (0.53), pulled (0.53), jumped (0.52), paddled (0.52)",1,0.6058343052864075,True
+tiempo verbal,walk:walked::swim:swam,gensim,"swam (0.66), jumped (0.56), swimming (0.54), pulled (0.53), gators (0.53)",1,0.6564732789993286,True
+tiempo verbal,walk:walked::swim:swam,GloVe,"swam (0.75), swimming (0.61), drowned (0.58), overboard (0.57), rowed (0.54)",1,0.7477165460586548,True
+tiempo verbal,go:went::take:took,SGNS,"took (0.89), taking (0.77), came (0.67), gained (0.64), proceeded (0.64)",1,0.8947550058364868,True
+tiempo verbal,go:went::take:took,gensim,"took (0.85), taking (0.75), came (0.69), proceeded (0.66), began (0.65)",1,0.8535889387130737,True
+tiempo verbal,go:went::take:took,GloVe,"took (0.94), came (0.84), taking (0.81), later (0.81), first (0.81)",1,0.9432843923568726,True
+tiempo verbal,run:running::eat:eating,SGNS,"eating (0.71), meat (0.64), consume (0.64), ate (0.63), nuzzling (0.63)",1,0.7068794965744019,True
+tiempo verbal,run:running::eat:eating,gensim,"eating (0.71), ate (0.69), defecate (0.69), subsisting (0.65), undercooked (0.65)",1,0.7085849046707153,True
+tiempo verbal,run:running::eat:eating,GloVe,"eating (0.79), ate (0.66), eaten (0.64), consume (0.60), meat (0.60)",1,0.7877139449119568,True
+plural,car:cars::child:children,SGNS,"children (0.72), grandmothers (0.62), daughters (0.61), parents (0.60), siblings (0.60)",1,0.719831109046936,True
+plural,car:cars::child:children,gensim,"children (0.71), mothers (0.61), school-age (0.60), daughters (0.59), girls (0.59)",1,0.7063255310058594,True
+plural,car:cars::child:children,GloVe,"children (0.82), mothers (0.72), parents (0.69), babies (0.68), sex (0.67)",1,0.8238247036933899,True
+plural,city:cities::country:countries,SGNS,"countries (0.72), nation (0.64), internationally (0.60), provinces (0.59), europe (0.59)",1,0.7221241593360901,True
+plural,city:cities::country:countries,gensim,"countries (0.73), nation (0.64), europe (0.61), internationally (0.61), sub-continent (0.61)",1,0.7342206239700317,True
+plural,city:cities::country:countries,GloVe,"countries (0.81), nation (0.75), regions (0.73), europe (0.70), continent (0.70)",1,0.8082405924797058,True
+plural,mouse:mice::foot:feet,SGNS,"camels (0.58), leg (0.52), amputated (0.51), dysentery (0.51), stretchers (0.51)",76,0.45375192165374756,False
+plural,mouse:mice::foot:feet,gensim,"paddled (0.60), bowmen (0.55), canoes (0.55), breastworks (0.55), camels (0.55)",36,0.5021679997444153,False
+plural,mouse:mice::foot:feet,GloVe,"feet (0.55), doses (0.54), half (0.54), suffered (0.53), treated (0.53)",1,0.546983540058136,True
+antónimo,possible:impossible::legal:illegal,SGNS,"copyright (0.62), infringed (0.59), obligations (0.58), legality (0.58), ejectment (0.58)",589,0.44255927205085754,False
+antónimo,possible:impossible::legal:illegal,gensim,"copyright (0.66), legality (0.59), frivolous (0.57), legally (0.56), infringement (0.55)",165,0.4648977518081665,False
+antónimo,possible:impossible::legal:illegal,GloVe,"law (0.60), laws (0.57), profession (0.57), difficult (0.56), legally (0.56)",268,0.41833674907684326,False

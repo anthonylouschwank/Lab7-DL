@@ -1,0 +1,291 @@
+{
+  "stats": [
+    {
+      "split": "train",
+      "articulos": 29444,
+      "lineas": 1801350,
+      "lineas_no_vacias": 1165029,
+      "encabezados": 275630,
+      "tokens_espacio": 101425671
+    },
+    {
+      "split": "validation",
+      "articulos": 60,
+      "lineas": 3760,
+      "lineas_no_vacias": 2461,
+      "encabezados": 560,
+      "tokens_espacio": 213886
+    },
+    {
+      "split": "test",
+      "articulos": 62,
+      "lineas": 4358,
+      "lineas_no_vacias": 2891,
+      "encabezados": 644,
+      "tokens_espacio": 241211
+    }
+  ],
+  "zipf": {
+    "exponente_s": 1.056879365880257,
+    "total_tokens": 84593278,
+    "tipos": 717430,
+    "cobertura_top10": 0.24611089074949904,
+    "cobertura_top1000": 0.6400906464459268,
+    "cobertura_top30000": 0.9462935577458058,
+    "top10": [
+      "the",
+      "of",
+      "and",
+      "in",
+      "to",
+      "a",
+      "was",
+      "on",
+      "'s",
+      "as"
+    ]
+  },
+  "vocab": [
+    {
+      "min_count": 1,
+      "vocab": 392765,
+      "pct_tokens_desconocidos": 0.0
+    },
+    {
+      "min_count": 2,
+      "vocab": 206965,
+      "pct_tokens_desconocidos": 0.6193223093962308
+    },
+    {
+      "min_count": 3,
+      "vocab": 153008,
+      "pct_tokens_desconocidos": 0.9790292399461942
+    },
+    {
+      "min_count": 5,
+      "vocab": 109700,
+      "pct_tokens_desconocidos": 1.467753873981048
+    },
+    {
+      "min_count": 10,
+      "vocab": 72652,
+      "pct_tokens_desconocidos": 2.275926155181107
+    },
+    {
+      "min_count": 20,
+      "vocab": 48370,
+      "pct_tokens_desconocidos": 3.3765165646718165
+    },
+    {
+      "min_count": 50,
+      "vocab": 27810,
+      "pct_tokens_desconocidos": 5.5052020074042645
+    }
+  ],
+  "subsampling": [
+    {
+      "t": 0.001,
+      "palabra": "the",
+      "frec_rel": 0.07687742302149511,
+      "pct_descartado_esperado": 87.29408875838583,
+      "pct_descartado_empirico": 87.28464360144193
+    },
+    {
+      "t": 0.001,
+      "palabra": "of",
+      "frec_rel": 0.0328178429103998,
+      "pct_descartado_esperado": 79.49686703804262,
+      "pct_descartado_empirico": 79.53173996136489
+    },
+    {
+      "t": 0.001,
+      "palabra": "and",
+      "frec_rel": 0.029577878363475214,
+      "pct_descartado_esperado": 78.23185718206292,
+      "pct_descartado_empirico": 78.20737755167397
+    },
+    {
+      "t": 0.001,
+      "palabra": "(corpus)",
+      "frec_rel": 1.0,
+      "pct_descartado_esperado": NaN,
+      "pct_descartado_empirico": 22.58149132955799
+    },
+    {
+      "t": 0.0001,
+      "palabra": "the",
+      "frec_rel": 0.07687742302149511,
+      "pct_descartado_esperado": 96.26330109848638,
+      "pct_descartado_empirico": 96.26805050974428
+    },
+    {
+      "t": 0.0001,
+      "palabra": "of",
+      "frec_rel": 0.0328178429103998,
+      "pct_descartado_esperado": 94.1752126401854,
+      "pct_descartado_empirico": 94.18411672174678
+    },
+    {
+      "t": 0.0001,
+      "palabra": "and",
+      "frec_rel": 0.029577878363475214,
+      "pct_descartado_esperado": 93.84735438465259,
+      "pct_descartado_empirico": 93.80655772204481
+    },
+    {
+      "t": 0.0001,
+      "palabra": "(corpus)",
+      "frec_rel": 1.0,
+      "pct_descartado_esperado": NaN,
+      "pct_descartado_empirico": 39.869408867328374
+    },
+    {
+      "t": 1e-05,
+      "palabra": "the",
+      "frec_rel": 0.07687742302149511,
+      "pct_descartado_esperado": 98.8464783566598,
+      "pct_descartado_empirico": 98.84832291314633
+    },
+    {
+      "t": 1e-05,
+      "palabra": "of",
+      "frec_rel": 0.0328178429103998,
+      "pct_descartado_esperado": 98.22392776299185,
+      "pct_descartado_empirico": 98.21936250002578
+    },
+    {
+      "t": 1e-05,
+      "palabra": "and",
+      "frec_rel": 0.029577878363475214,
+      "pct_descartado_esperado": 98.12746717779582,
+      "pct_descartado_empirico": 98.14714843857224
+    },
+    {
+      "t": 1e-05,
+      "palabra": "(corpus)",
+      "frec_rel": 1.0,
+      "pct_descartado_esperado": NaN,
+      "pct_descartado_empirico": 64.11541532195318
+    }
+  ],
+  "pairs": [
+    {
+      "etapa": "sin submuestreo",
+      "tokens": 29560200,
+      "pares_ventana_fija": 286560858,
+      "pares_ventana_dinamica": 173143720
+    },
+    {
+      "etapa": "con submuestreo t=1e-4",
+      "tokens": 17776033,
+      "pares_ventana_fija": 168764656,
+      "pares_ventana_dinamica": 102429217
+    }
+  ],
+  "subset_tokens": 30000534,
+  "train_tokens": 29560200,
+  "vocab_size": 109700,
+  "hw": {
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "cpu_threads": 8,
+    "torch": "2.14.1+cu130"
+  },
+  "tok_cmp": [
+    {
+      "oracion": "I don't think they'll arrive before 5 p.m.",
+      "propio": "i | do | n't | think | they | 'll | arrive | before | 5 | p.m.",
+      "nltk": "i | do | n't | think | they | 'll | arrive | before | 5 | p.m",
+      "spacy": "i | do | n't | think | they | 'll | arrive | before | 5 | p.m.",
+      "igual_nltk": false,
+      "igual_spacy": true
+    },
+    {
+      "oracion": "She can't believe it's already 2024!",
+      "propio": "she | ca | n't | believe | it | 's | already | 2024",
+      "nltk": "she | ca | n't | believe | it | 's | already | 2024",
+      "spacy": "she | ca | n't | believe | it | 's | already | 2024",
+      "igual_nltk": true,
+      "igual_spacy": true
+    },
+    {
+      "oracion": "The state-of-the-art model costs $1,000.50 in the U.S.",
+      "propio": "the | state-of-the-art | model | costs | 1,000.50 | in | the | u.s.",
+      "nltk": "the | state-of-the-art | model | costs | 1,000.50 | in | the | u.s",
+      "spacy": "the | state | of | the | art | model | costs | 1,000.50 | in | the | u.s",
+      "igual_nltk": false,
+      "igual_spacy": false
+    },
+    {
+      "oracion": "Dr. Smith and Mr. O'Brien met at St. Paul's.",
+      "propio": "dr. | smith | and | mr. | o'brien | met | at | st. | paul | 's",
+      "nltk": "dr. | smith | and | mr. | o'brien | met | at | st. | paul | 's",
+      "spacy": "dr | smith | and | mr | o'brien | met | at | st | paul | 's",
+      "igual_nltk": true,
+      "igual_spacy": false
+    },
+    {
+      "oracion": "We'll see the well-known New York-based company e.g. tomorrow.",
+      "propio": "we | 'll | see | the | well-known | new | york-based | company | e.g. | tomorrow",
+      "nltk": "we | 'll | see | the | well-known | new | york-based | company | e.g | tomorrow",
+      "spacy": "we | 'll | see | the | well | known | new | york | based | company | e.g. | tomorrow",
+      "igual_nltk": false,
+      "igual_spacy": false
+    },
+    {
+      "oracion": "He said: \"Rock'n'roll isn't dead\" -- or is it?",
+      "propio": "he | said | rock'n'roll | is | n't | dead | or | is | it",
+      "nltk": "he | said | rock'n'roll | is | n't | dead | or | is | it",
+      "spacy": "he | said | rock'n'roll | is | n't | dead | or | is | it",
+      "igual_nltk": true,
+      "igual_spacy": true
+    },
+    {
+      "oracion": "The co-founder's e-mail was jsmith@example.com.",
+      "propio": "the | co-founder | 's | e-mail | was | jsmith | example | com",
+      "nltk": "the | co-founder | 's | e-mail | was | jsmith | example.com",
+      "spacy": "the | co | founder | 's | e | mail | was | jsmith@example.com",
+      "igual_nltk": false,
+      "igual_spacy": false
+    },
+    {
+      "oracion": "Temperatures rose 3.5% between Jan. 1 and Feb. 28.",
+      "propio": "temperatures | rose | 3.5 | between | jan. | 1 | and | feb. | 28",
+      "nltk": "temperatures | rose | 3.5 | between | jan. | 1 | and | feb. | 28",
+      "spacy": "temperatures | rose | 3.5 | between | jan | 1 | and | feb | 28",
+      "igual_nltk": true,
+      "igual_spacy": false
+    },
+    {
+      "oracion": "You're right, I'd've done it differently.",
+      "propio": "you | 're | right | i | 'd | 've | done | it | differently",
+      "nltk": "you | 're | right | i'd | 've | done | it | differently",
+      "spacy": "you | 're | right | i | 'd | 've | done | it | differently",
+      "igual_nltk": false,
+      "igual_spacy": true
+    },
+    {
+      "oracion": "The 1990s were the decade of the X-Files and Spider-Man.",
+      "propio": "the | 1990s | were | the | decade | of | the | x-files | and | spider-man",
+      "nltk": "the | 1990s | were | the | decade | of | the | x-files | and | spider-man",
+      "spacy": "the | 1990s | were | the | decade | of | the | x | files | and | spider | man",
+      "igual_nltk": true,
+      "igual_spacy": false
+    },
+    {
+      "oracion": "Prices fell 10-15 percent (approx.) in the U.K.'s markets.",
+      "propio": "prices | fell | 10-15 | percent | approx | in | the | u.k. | 's | markets",
+      "nltk": "prices | fell | 10-15 | percent | approx | in | the | u.k. | 's | markets",
+      "spacy": "prices | fell | 10 | 15 | percent | approx | in | the | u.k | 's | markets",
+      "igual_nltk": true,
+      "igual_spacy": false
+    },
+    {
+      "oracion": "It's a self-driving car; won't it crash?",
+      "propio": "it | 's | a | self-driving | car | wo | n't | it | crash",
+      "nltk": "it | 's | a | self-driving | car | wo | n't | it | crash",
+      "spacy": "it | 's | a | self | driving | car | wo | n't | it | crash",
+      "igual_nltk": true,
+      "igual_spacy": false
+    }
+  ]
+}
