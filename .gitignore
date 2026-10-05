@@ -1,0 +1,16 @@
+.venv/
+data/
+__pycache__/
+.ipynb_checkpoints/
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+# modelos: sólo se versiona el mejor SGNS (los demás se regeneran con el notebook)
+models/*
+!models/sgns_best_vectors.kv
+!models/sgns_best_vectors.kv.vectors.npy
+!models/sgns_best_vectors.txt.gz
